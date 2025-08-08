@@ -2,50 +2,76 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8" />
-<title>电子漂流本 💬 (Cusdis 最新版)</title>
+<title>电子漂流本 💬 (WZHS 小羊之家)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
+  /* 重置默认边距，柔和背景 */
   body {
-    max-width: 600px;
-    margin: 40px auto;
+    margin: 0;
+    padding: 40px 20px;
     font-family: "微软雅黑", Arial, sans-serif;
-    padding: 0 10px;
-    background: #f9f9f9;
-    color: #333;
+    background: #f5f7fa;
+    color: #444;
+    display: flex;
+    justify-content: center;
   }
+  /* 主容器，居中，宽屏 */
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 30px 40px 50px;
+  }
+  /* 标题区 */
   h1 {
-    text-align: center;
-    margin-bottom: 10px;
     color: #2c3e50;
+    font-weight: 700;
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 12px;
   }
   h2, h3 {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #5a6a82;
+    font-weight: 500;
+    font-size: 1.3em;
   }
+  /* 评论区分割线 */
+  #cusdis_thread {
+    margin-top: 40px;
+    border-top: 1px solid #e0e6f1;
+    padding-top: 20px;
+  }
+  /* 页脚 */
   footer {
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
     font-size: 0.9em;
-    color: #888;
+    color: #999;
+    letter-spacing: 1.2px;
   }
 </style>
 </head>
 <body>
-  <h1>电子漂流本 💬</h1>
-  <h2>💬 在这里你可以分享你与主 / 你与团契 / 读经祷告的的日常</h2>
-  <h3>💬 也可以是见证 / 感动和感恩的点</h3>
+  <div class="container">
+    <h1>电子漂流本 💬</h1>
+    <h2>💬 在这里你可以分享你与主 / 你与团契 / 读经祷告的的日常</h2>
+    <h3>💬 也可以是见证 / 感动和感恩的点</h3>
 
-  <div id="cusdis_thread"
-    data-host="https://cusdis.com"
-    data-app-id="d9195341-4478-409f-92e5-8a5f94ede3ed"
-    data-page-id="drift-bottle-page"
-    data-page-url="https://wifi-wa.github.io/wzhs-notebook/"
-    data-page-title="电子漂流本 漂流瓶"
-  ></div>
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="d9195341-4478-409f-92e5-8a5f94ede3ed"
+      data-page-id="drift-bottle-page"
+      data-page-url="https://wifi-wa.github.io/wzhs-notebook/"
+      data-page-title="电子漂流本 漂流瓶"
+    ></div>
 
-  <footer>—— WZHS 小羊之家 ——</footer>
+    <footer>—— WZHS 小羊之家 ——</footer>
+  </div>
 
   <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 </body>
